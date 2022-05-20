@@ -1,0 +1,19 @@
+function VerificarMedia(notas)
+{
+    var media = 0;
+    
+    //Soma dos valores/notas
+    for (let i = 0; i < notas.length; i++) {
+       
+        media = media + notas[i];
+    }
+
+    // divisão pelo total de registros de notas
+    media = media / notas.length;
+    return media;
+
+ 
+}
+
+var provas = [10, 8, 9];
+console.log(VerificarMedia(provas));
